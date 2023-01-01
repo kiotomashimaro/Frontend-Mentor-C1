@@ -1,0 +1,132 @@
+:root{
+    --BrightOrange: #e38826;
+    --DarkCyan: #006970;
+    --VeryDarkCyan: #004241;
+    --TransparentWhite: #ffffffbf;
+    --VeryLightGray: #f2f2f2;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lexend Deca';
+    background-color: var(--VeryLightGray);
+    font-size: 1.5rem;
+}
+
+h2{
+    color: var(--VeryLightGray);
+    font-size: 3rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+p{
+    font-size: 15px;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: var(--TransparentWhite);
+    margin: auto;
+    margin-bottom: 8rem;
+}
+
+section{
+    width: 25rem;
+    height: 45rem;
+    padding: 4rem;
+}
+
+.alinear-secciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+ 
+    height: 100vh;
+
+}
+
+.bg-color:nth-child(1){
+    background-color: var(--BrightOrange);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.bg-color:nth-child(2){
+    background-color: var(--DarkCyan);
+}
+.bg-color:nth-child(3){
+    background-color: var(--VeryDarkCyan);
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius:  1rem;
+}
+
+.boton1{
+    color: var(--BrightOrange);
+    padding: 1.2rem 3rem;
+    border: 2px solid var(--VeryLightGray);
+    background-color: var(--VeryLightGray);
+    border-radius: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton1:hover{
+    color: var(--VeryLightGray);
+    background-color: var(--BrightOrange);
+}
+
+.boton2{
+    color: var(--DarkCyan);
+    padding: 1.2rem 3rem;
+    border: 2px solid var(--VeryLightGray);
+    background-color: var(--VeryLightGray);
+    border-radius: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton2:hover{
+    color: var(--VeryLightGray);
+    background-color: var(--DarkCyan);
+}
+
+.boton3{
+    color: var(--VeryDarkCyan);
+    padding: 1.2rem 3rem;
+    border: 2px solid var(--VeryLightGray);
+    background-color: var(--VeryLightGray);
+    border-radius: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton3:hover{
+    color: var(--VeryLightGray);
+    background-color: var(--VeryDarkCyan);
+}
+
+.sombra{
+    -webkit-box-shadow: 22px 16px 36px -5px rgba(0,0,0,0.69);
+    -moz-box-shadow: 22px 16px 36px -5px rgba(0,0,0,0.69);
+    box-shadow: 22px 16px 36px -5px rgba(0,0,0,0.69);
+    padding: 10rem 20rem;
+}
